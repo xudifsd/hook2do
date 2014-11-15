@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div id="home">
+    <header>
+        <nav class="topnav">
+            <ul>
+                <li><a href="{% url 'login' %}">Log in</a></li>
+                <li><a href="{% url 'signup' %}">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <section id="home-header">
+            <div id="header-content">
+                <div class="title">
+                    {% include "svg/hook2do-logo.svg" %}
+                </div>
+                <p class="sub-title">
+                Be less busy and enjoy the connected world.
+                </p>
+            </div>
+        </section>
+        <section id="home-callouts">
+            <div class="container">
+                <h2 class="title">
+                    Yes, this is the <b>task manager</b> you should have!
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="logo">
+                            {% include "svg/callouts-simple.svg" %}
+                        </div>
+                        <h3>Simple</h3>
+                        <p>
+                        It is a tool that just enough to use. You should put more time
+                        on the tasks, isn't it?
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="logo">
+                            {% include "svg/callouts-beautiful.svg" %}
+                        </div>
+                        <h3>Beautiful</h3>
+                        <p>
+                        Everywhere is in material design. It is flat, clean and elegant.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="logo">
+                            {% include "svg/callouts-realtime.svg" %}
+                        </div>
+                        <h3>Realtime</h3>
+                        <p>
+                        Thanks to latest Web tech, your to-dos are syncing in realtime among all your devices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-hook-intro">
+            <div class="container">
+                <h3 class="title"><b>Hook</b> to everywhere!</h3>
+                <p class="description">
+                Hook2do is able to be connected to a wide range of services.
+                The contents and status of tasks will sync in realtime.
+                It also enables you to write your own app to hook!
+                </p>
+                <div class="row">
+                    <div class="col">
+                        {% include "svg/hooks-intro.svg" %}
+                    </div>
+                    <div class="col contents-col">
+                        <h3>Web Services, Phones, Smart Devices</h3>
+                        <p>
+                        Hook2do can collect every apects from your life and add it to your to-dos.
+                        We believe our hook API is much better than classical Email in doing this as
+                        hooks can sync the content and status of items in realtime, while Email has a delay,
+                        can not be updated and canceled.
+                        </p>
+                        <p>
+                        Several service hooks are already availiable and you can easily write your own.
+                        In fact, thanks to our non-center protocol, you even not need an oauth key to push
+                        and sync items!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-start">
+            <div class="container">
+                <h3 class="title">Start use <b>hook2do</b> today!</h3>
+                <p>
+                <a class="button" href="{% url 'signup' %}">Get started now <i class="fa fa-angle-right"></i></a>
+                </p>
+            </div>
+        </section>
+        <section id="home-team">
+            <div class="container">
+            <h3 class="title">Team behind <b>hook2do</b></h3>
+            <div class="row">
+                <div class="col avatar"><a href="http://chasezhang.me"><img
+                        src="https://www.gravatar.com/avatar/28d8427ab731e5556ec4be726699a825?s=200" alt=""></a></div>
+                <div class="col avatar"><a href="http://xudifsd.org"><img
+                        src="https://www.gravatar.com/avatar/da8c63db24d7e098f7b06185e8d1dbbb?s=200" alt=""></a></div>
+                <div class="col avatar"><a href="http://www.liyaos.com"><img
+                        src="https://www.gravatar.com/avatar/92ea00477f3f9e65bbf115116e628bac?s=200" alt=""></a></div>
+                <div class="col avatar"><a><img
+                        src="https://www.gravatar.com/avatar/b15740b86e0db858e1e42a6608d03dbd?s=200" alt=""></a></div>
+            </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div id="copyright-text">
+        Copyright © 2014 Hook2do
+        </div>
+    </footer>
+</div>
+{% endblock body %}

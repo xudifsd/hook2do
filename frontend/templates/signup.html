@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<div id="signup">
+    <div class="logo">
+        {% include "svg/hook2do-logo.svg" %}
+    </div>
+    <div class="content">
+        <div class="sorry-text">
+            Sorry, hook2do is invited only by now.
+        </div>
+        <div class="footer">
+            Have an account?
+            <a href="{% url 'login' %}" >LOG IN</a>
+        </div>
+    </div>
+</div>
+{% endblock body %}
